@@ -2419,8 +2419,24 @@ function policyJSONConfiguration() {
                         "progresstext": "Duo Authentication for macOS adds two-factor authentication (2FA) to local login on macOS, enhancing security by requiring a secondary authentication method",
                         "trigger_list": [
                                          {
-                                            "trigger": "SYM-DML",
+                                            "trigger": "SYM-DUO",
                                             "validation": "/private/var/root/Library/Preferences/com.duosecurity.maclogon.plist"
+                                         }
+                        ]
+                    },
+                    {
+                        "listitem": "BeyondTrust Jump Client",
+                        "subtitle": "Remote Assist",
+                        "icon": "https://use2.ics.services.jamfcloud.com/icon/hash_a1c73b2037f707bfb8eaacf00b9685f7f78f23f0129eebf4d0781b0691827ef1",
+                        "progresstext": "BeyondTrust Remote Support enables help desk teams to securely access and troubleshoot remote devices.",
+                        "trigger_list": [
+                                         {
+                                            "trigger": "SYM-BRS",
+                                            "validation": "None"
+                                         },
+                                         {
+                                            "trigger": "SYMv-Bomgar",
+                                            "validation": "Remote"
                                          }
                         ]
                     },
